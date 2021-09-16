@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 12</title>
+
+    <script type="text/javascript" src="../jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="q12.js"></script>
+
+    <style>
+        h2,p{
+            text-align: center;
+        }
+        div{
+            height: 250px;
+            width: 400px;
+            background-color: rgb(49, 49, 49);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        li{
+            padding: 10px;
+            margin: 5px;
+            color: black;
+            background-color: yellow;
+        }
+        #test{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Question 12</h2>
+    <p>We have bind a click funtion to parent div but we want stop it from performing when user clicks on its child li</p>
+    <p id="test">Click on "div" element then try clicking on "li" element</p>
+    <div>
+        <ul>
+            <li>This</li>
+            <li>is</li>
+            <li>Unordered</li>
+            <li>List</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 14</title>
+
+    <script type="text/javascript" src="../jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="q14.js"></script>
+
+    <style>
+        h2,p{
+            text-align: center;
+        }
+        table{
+           border: 1px solid gray;
+           border-collapse: collapse;
+           width: 50%;
+           margin: 0 auto;
+        }
+
+        tr:nth-child(even){
+           background-color: rgb(212, 204, 204);
+        }
+ 
+        th {
+           background-color: grey;
+           color: white;
+        }
+
+        th,td {
+           padding: 7px;
+           text-align: center;
+        }
+        #test{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Question 14</h2>
+    <p>Chagne color of every cell which has number larger than 10.</p>
+    <p id="test">Click here to apply jQuery!</p>
+    <table>
+        <tr>
+            <th class="nos">Numbers</th>
+        </tr>
+
+        <tr>
+            <td class="nos">34</td>
+        </tr>
+        <tr>
+            <td class="nos">6</td>
+        </tr>
+        <tr>
+            <td class="nos">10</td>
+        </tr>
+        <tr>
+            <td class="nos">11</td>
+        </tr>
+        <tr>
+            <td class="nos">9</td>
+        </tr>
+    </table>
+</body>
+</html>

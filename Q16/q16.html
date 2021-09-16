@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 16</title>
+
+    <script type="text/javascript" src="../jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="q16.js"></script>
+
+    <style>
+        h2,p{
+            text-align: center;
+        }
+        table{
+           border: 1px solid gray;
+           border-collapse: collapse;
+           width: 50%;
+           margin: 0 auto;
+        }
+
+        tr:nth-child(even){
+           background-color: rgb(212, 204, 204);
+        }
+ 
+        th {
+           background-color: grey;
+           color: white;
+        }
+
+        th,td {
+           padding: 7px;
+           text-align: center;
+        }
+
+        td > div{
+            display: flex;
+            position: relative;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            position:absolute;
+            padding: 5px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Question 16</h2>
+    <p>Add cross button on row and bind click function which make a delete request to server, after success event remove the row from dom</p>
+    <table>
+        <tr>
+            <th class="nos">Numbers</th>
+        </tr>
+
+        <tr>
+            <td class="nos"><div>34<button class="delete">X</button></div></td>
+        </tr>
+        <tr>
+            <td class="nos"><div>11<button class="delete">X</button></div></td>
+        </tr>
+        <tr>
+            <td class="nos"><div>89<button class="delete">X</button></div></td>
+        </tr>
+        <tr>
+            <td class="nos"><div>4<button class="delete">X</button></div></td>
+        </tr>
+        <tr>
+            <td class="nos"><div>20<button class="delete">X</button></div></td>
+        </tr>
+    </table>
+
+</body>
+</html>
