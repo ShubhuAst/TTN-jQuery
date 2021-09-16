@@ -13,9 +13,22 @@
         h2,p{
             text-align: center;
         }
-        button,#test{
-            padding: 15px;
-            margin: 5px;
+
+        ul.parent >li {
+            float: left;
+            width :30%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+        ul.child{
+            display: none;
+        }
+        li{
+            list-style: none;
+            text-align: center;
+        }
+        #test{
             color: blue;
         }
     </style>
@@ -23,6 +36,23 @@
 <body>
     <h2>Question 10</h2>
     <p>Create a dropdown menu using hover method in jquery</p>
-    <p id="test">Click me!</p>
+    <p id="test">Hover Over List</p>
+    <ul class="parent">
+        <li>List1
+            <ul class="child">
+                <li class="child">1.1</li>
+                <li class="child">1.2</li>
+            </ul>
+        </li>
+        <li>List2</li>
+        <li>List3
+            <ul class="child">
+                <li>3.1</li>
+                <li>3.2</li>
+                <li>3.3</li>
+                <li>3.4</li>
+            </ul>
+        </li>
+    </ul>
 </body>
 </html>
