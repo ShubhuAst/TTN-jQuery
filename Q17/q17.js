@@ -10,10 +10,6 @@ $(document).ready(function(){
         $(this).empty()
         $(this).append("<img scr='' class='slideShow'></img>");
 
-        // for(var i = 0; i < arrImg.length; i++){
-            
-        // }
-
         $.each(arrImg , function(index, val) { 
             setTimeout(function(){
                 console.log(val);
